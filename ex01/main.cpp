@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/07 16:46:10 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:11 by elmondo          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "Cat.hpp"
 #include "Dog.hpp"
 
@@ -51,11 +39,15 @@ int main(void)
 	Dog original;
 	original.getBrain()->setIdea(0, "Chase the ball");
 	original.getBrain()->setIdea(1, "Eat food");
+	original.getBrain()->setIdea(99, "Eat foodsss");
+	original.getBrain()->setIdea(101, "foodsss");
 
 	Dog copy(original);
 
 	std::cout << std::endl;
 	std::cout << "Original idea[0]: " << original.getBrain()->getIdea(0) << std::endl;
+	std::cout << "Original idea[99]: " << original.getBrain()->getIdea(99) << std::endl;
+	std::cout << "Original idea[101]: " << original.getBrain()->getIdea(101) << std::endl;
 	std::cout << "Copy idea[0]:     " << copy.getBrain()->getIdea(0) << std::endl;
 
 	copy.getBrain()->setIdea(0, "Sleep all day");

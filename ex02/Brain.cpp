@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Brain.cpp                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/07 16:46:31 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:32 by elmondo          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "Brain.hpp"
 
 Brain::Brain(void)
@@ -20,7 +8,7 @@ Brain::Brain(void)
 Brain::Brain(const Brain &other)
 {
 	for (int i = 0; i < 100; i++)
-		_ideas[i] = other._ideas[i];
+		ideas[i] = other.ideas[i];
 	std::cout << "Brain copy constructed." << std::endl;
 }
 
@@ -29,7 +17,7 @@ Brain &Brain::operator=(const Brain &other)
 	if (this != &other)
 	{
 		for (int i = 0; i < 100; i++)
-			_ideas[i] = other._ideas[i];
+			ideas[i] = other.ideas[i];
 	}
 	std::cout << "Brain assigned." << std::endl;
 	return *this;
@@ -47,11 +35,11 @@ const std::string &Brain::getIdea(int index) const
 		static const std::string empty;
 		return empty;
 	}
-	return _ideas[index];
+	return ideas[index];
 }
 
 void Brain::setIdea(int index, const std::string &idea)
 {
 	if (index >= 0 && index < 100)
-		_ideas[index] = idea;
+		ideas[index] = idea;
 }

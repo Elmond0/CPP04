@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/07 16:45:34 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:45:35 by elmondo          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef WRONGANIMAL_HPP
 #define WRONGANIMAL_HPP
 
@@ -19,7 +7,7 @@
 class WrongAnimal
 {
 protected:
-	std::string _type;
+	std::string type;
 
 public:
 	WrongAnimal(void);

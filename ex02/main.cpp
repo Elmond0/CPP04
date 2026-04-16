@@ -1,23 +1,31 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/07 16:46:47 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:48 by elmondo          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "Cat.hpp"
 #include "Dog.hpp"
 
 int main(void)
 {
-	// Animal a;  // WON'T COMPILE: Animal is abstract
+	std::cout << "=== Animal is ABSTRACT: cannot instantiate ===" << std::endl;
+	//Animal a;
+	//Animal *a = new Animal();
 
-	std::cout << "=== Array of Animals ===" << std::endl;
+
+	std::cout << "But we CAN use Animal* as pointer to Dog/Cat:" << std::endl;
+	Animal *dog = new Dog();
+	Animal *cat = new Cat();
+
+	std::cout << std::endl
+			  << "=== Polymorphism still works ===" << std::endl;
+	std::cout << dog->getType() << ": ";
+	dog->makeSound();
+	std::cout << cat->getType() << ": ";
+	cat->makeSound();
+
+	std::cout << std::endl
+			  << "=== Cleanup ===" << std::endl;
+	delete dog;
+	delete cat;
+
+	std::cout << std::endl
+			  << "=== Array of Animals ===" << std::endl;
 	const int size = 10;
 	Animal *animals[size];
 

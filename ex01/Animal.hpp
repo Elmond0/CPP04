@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/07 16:45:45 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:45:46 by elmondo          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
@@ -19,7 +7,7 @@
 class Animal
 {
 protected:
-	std::string _type;
+	std::string type;
 
 public:
 	Animal(void);
