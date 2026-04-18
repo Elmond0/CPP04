@@ -6,7 +6,7 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:45:34 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:45:35 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 12:40:30 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class WrongAnimal
 {
 protected:
-	std::string _type;
+	std::string type;
 
 public:
 	WrongAnimal(void);

@@ -6,7 +6,7 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:46:45 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:46 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 12:45:24 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Dog : public Animal
 {
 private:
-	Brain *_brain;
+	Brain *brain;
 
 public:
 	Dog(void);

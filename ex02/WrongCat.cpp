@@ -6,7 +6,7 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:46:56 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:57 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 12:46:12 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 WrongCat::WrongCat(void) : WrongAnimal()
 {
-	_type = "WrongCat";
+	type = "WrongCat";
 	std::cout << "WrongCat constructed." << std::endl;
 }
 

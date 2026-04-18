@@ -6,7 +6,7 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:45:17 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:45:18 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 12:40:21 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Cat::Cat(void) : Animal()
 {
-	_type = "Cat";
+	type = "Cat";
 	std::cout << "Cat constructed." << std::endl;
 }
 

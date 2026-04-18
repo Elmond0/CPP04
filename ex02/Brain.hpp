@@ -6,7 +6,7 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:46:33 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:34 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 12:43:19 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Brain
 {
 private:
-	std::string _ideas[100];
+	std::string ideas[100];
 
 public:
 	Brain(void);

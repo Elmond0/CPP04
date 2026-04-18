@@ -6,7 +6,7 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:45:22 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:45:23 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 12:40:23 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Dog::Dog(void) : Animal()
 {
-	_type = "Dog";
+	type = "Dog";
 	std::cout << "Dog constructed." << std::endl;
 }
 

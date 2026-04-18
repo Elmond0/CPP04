@@ -6,19 +6,19 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:46:41 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:42 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 12:45:41 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog(void) : Animal(), _brain(new Brain())
+Dog::Dog(void) : Animal(), brain(new Brain())
 {
-	_type = "Dog";
+	type = "Dog";
 	std::cout << "Dog constructed." << std::endl;
 }
 
-Dog::Dog(const Dog &other) : Animal(other), _brain(new Brain(*other._brain))
+Dog::Dog(const Dog &other) : Animal(other), brain(new Brain(*other.brain))
 {
 	std::cout << "Dog copy constructed." << std::endl;
 }
@@ -28,7 +28,7 @@ Dog &Dog::operator=(const Dog &other)
 	if (this != &other)
 	{
 		Animal::operator=(other);
-		*_brain = *other._brain;
+		*brain = *other.brain;
 	}
 	std::cout << "Dog assigned." << std::endl;
 	return *this;
@@ -36,7 +36,7 @@ Dog &Dog::operator=(const Dog &other)
 
 Dog::~Dog()
 {
-	delete _brain;
+	delete brain;
 	std::cout << "Dog destructed." << std::endl;
 }
 
@@ -47,5 +47,5 @@ void Dog::makeSound(void) const
 
 Brain *Dog::getBrain(void) const
 {
-	return _brain;
+	return brain;
 }
