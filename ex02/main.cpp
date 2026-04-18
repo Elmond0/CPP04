@@ -6,7 +6,7 @@
 /*   By: elmondo <elmondo@student.42firenze.it>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 16:46:47 by elmondo           #+#    #+#             */
-/*   Updated: 2026/04/07 16:46:48 by elmondo          ###   ########.fr       */
+/*   Updated: 2026/04/18 14:29:40 by elmondo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main(void)
 {
-	// Animal a;  // WON'T COMPILE: Animal is abstract
+	// Animal a;
 
 	std::cout << "=== Array of Animals ===" << std::endl;
 	const int size = 10;
